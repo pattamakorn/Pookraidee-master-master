@@ -42,5 +42,6 @@ public class fragmentHome extends AppCompatActivity {
         modelFeedArrayList.add(modelFeed);
 
         adapterFeed.notifyDataSetChanged();
+
     }
 }
