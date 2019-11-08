@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".treeshow">
+
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stree_top"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/treepic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="@dimen/text_20"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/chai"
+        />
+    <TextView
+        android:id="@+id/treename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/treepic"
+        android:text="@string/stree_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        />
+    <View
+        android:id="@+id/separate1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/treename"
+        android:layout_marginTop="15dp"
+        android:background="#aca4a4"
+        />
+    <LinearLayout
+        android:id="@+id/detail"
+        android:layout_below="@+id/separate1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/sunny"
+                android:layout_width="54dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/text_20"
+                android:src="@drawable/sunny"
+                android:layout_marginRight="20dp"
+                />
+
+            <TextView
+                android:id="@+id/sunnytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/stree_sunshine"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_alignBaseline="@+id/sunny"
+            android:layout_toEndOf="@+id/sunny"
+            android:background="#aca4a4"
+            />
+
+        <LinearLayout
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/drop"
+                android:layout_width="54dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/text_20"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/drop" />
+
+            <TextView
+                android:id="@+id/droptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/stree_moist"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_alignBaseline="@+id/sunny"
+            android:layout_toEndOf="@+id/sunny"
+            android:background="#aca4a4"
+            />
+        <LinearLayout
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ph"
+                android:layout_width="54dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/text_20"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ph" />
+
+            <TextView
+                android:id="@+id/phtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/stree_ph"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_alignBaseline="@+id/sunny"
+            android:layout_toEndOf="@+id/sunny"
+            android:background="#aca4a4"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/rich"
+                android:layout_width="54dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="@dimen/text_20"
+                android:src="@drawable/rich"
+
+                />
+
+            <TextView
+                android:id="@+id/richtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/stree_price"
+                android:textSize="14dp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/separate2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/detail"
+        android:background="#aca4a4"
+        />
+
+    <Button
+        android:id="@+id/pukk"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separate2"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/green_stly"
+        android:text="@string/stree_start"
+
+
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/view_de"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separate2"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="220dp"
+        android:background="@drawable/orang"
+        android:text="@string/stree_more">
+
+
+    </Button>
+
+</RelativeLayout>

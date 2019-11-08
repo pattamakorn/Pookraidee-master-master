@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/money1"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rshowmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/dividend_dividend"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/showmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@+id/rshowmoney"
+                android:text=" 3000 บาท"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rtimemoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/showmoney"
+                android:layout_alignStart="@+id/rshowmoney"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/dividend_date"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/timemoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/rtimemoney"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/rtimemoney"
+                android:text=" 22-22-2019"
+                android:textColor="#000" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

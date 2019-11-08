@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".treefollow">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stree_your_planting"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/treepic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/head"
+        android:layout_marginTop="@dimen/text_20"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/chai"
+        />
+    <TextView
+        android:id="@+id/treename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/treepic"
+        android:text="@string/stree_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        />
+    <View
+        android:id="@+id/separate1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/treename"
+        android:layout_marginTop="15dp"
+        android:background="#aca4a4"
+        />
+
+    <LinearLayout
+        android:id="@+id/detail"
+        android:layout_width="290dp"
+        android:layout_height="103dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/separate1"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_alignBaseline="@+id/sunny"
+            android:layout_toEndOf="@+id/sunny"
+            android:background="#aca4a4" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/sunny"
+                android:layout_width="54dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/text_20"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/sunny" />
+
+            <TextView
+                android:id="@+id/sunnytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/stree_sunshine"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_alignBaseline="@+id/sunny"
+            android:layout_toEndOf="@+id/sunny"
+            android:background="#aca4a4" />
+
+        <LinearLayout
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/drop"
+                android:layout_width="54dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/text_20"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/drop" />
+
+            <TextView
+                android:id="@+id/droptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/stree_moist"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_alignBaseline="@+id/sunny"
+            android:layout_toEndOf="@+id/sunny"
+            android:background="#aca4a4" />
+
+        <LinearLayout
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ph"
+                android:layout_width="54dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/text_20"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ph" />
+
+            <TextView
+                android:id="@+id/phtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/stree_ph"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_alignBaseline="@+id/sunny"
+            android:layout_toEndOf="@+id/sunny"
+            android:background="#aca4a4" />
+    </LinearLayout>
+    <View
+        android:id="@+id/separate2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/detail"
+        android:background="#aca4a4"
+        />
+
+    <TextView
+        android:id="@+id/head2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separate2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/stree_percent"
+        android:textSize="@dimen/text_18" />
+
+    <com.app.adprogressbarlib.AdCircleProgress
+        android:id="@+id/pgb_progress4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head2"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTintMode="add"
+        app:adpgb_background_color="@android:color/background_light"
+        app:adpgb_finished_color="@android:color/white"
+        app:adpgb_progress="20"
+        app:adpgb_text_color="@android:color/holo_red_light"
+        app:adpgb_text_size="20dp"
+        app:adpgb_unfinished_color="@android:color/holo_red_light"
+        custom:adpgb_finished_stroke_width="5dp"
+        custom:adpgb_show_text="true"
+        custom:adpgb_unfinished_stroke_width="5dp" />
+
+
+    <TextView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stree_adjustment"
+        android:textSize="@dimen/text_18"
+        android:layout_below="@+id/pgb_progress4"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/edit_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stree_how_to_adjustment"
+        android:textSize="@dimen/text_18"
+        android:layout_below="@+id/pgb_progress4"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/edit"
+        android:layout_marginLeft="10dp"
+        />
+
+</RelativeLayout>

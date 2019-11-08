@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "522013762190",
+    "firebase_url": "https://pookraidee-553b4.firebaseio.com",
+    "project_id": "pookraidee-553b4",
+    "storage_bucket": "pookraidee-553b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522013762190:android:3787bc8d22fffed8",
+        "android_client_info": {
+          "package_name": "com.pookraidee.panupongthongsri.pookraidee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522013762190-a619j0rn7ljb1onhb37avo24qt0s525g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pookraidee.panupongthongsri.pookraidee",
+            "certificate_hash": "b6bdebe7e6ac66b5a3169abd2d0c3f5616f984b4"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMdhtmCiSkWuvISaC-nuxYShqXABcpSjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522013762190-kkaom4jaq6k8tr98dojbm287sd2fh22q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

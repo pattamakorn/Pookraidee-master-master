@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:id="@+id/dnews2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/history" />
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rstart_tree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/history_plant_start"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/start_tree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/rstart_tree"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toEndOf="@+id/rstart_tree"
+                    android:text="start"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:textColor="#000"
+                    android:id="@+id/rend_tree"
+                    android:layout_below="@+id/start_tree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/history_plant_stop"/>
+
+                <TextView
+                    android:id="@+id/end_tree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/start_tree"
+                    android:layout_alignBottom="@+id/rend_tree"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toEndOf="@+id/rend_tree"
+                    android:text="stop"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:textColor="#000"
+                    android:id="@+id/rstree_name"
+                    android:layout_below="@+id/end_tree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/history_Vegetables_grown"/>
+
+                <TextView
+                    android:id="@+id/stree_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/end_tree"
+                    android:layout_alignBottom="@+id/rstree_name"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toEndOf="@+id/rstree_name"
+                    android:text="Vegetables_grown"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/rweight_tree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rstree_name"
+                    android:layout_alignTop="@+id/stree_name"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/history_weight"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/weight_tree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rstree_name"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toEndOf="@+id/rweight_tree"
+                    android:text="weight"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/rtotal_revenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rweight_tree"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/history_revenue"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/total_revenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/rtotal_revenue"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/rtotal_revenue"
+                    android:text="revenue"
+                    android:textColor="#000" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>
